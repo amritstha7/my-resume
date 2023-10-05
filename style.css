@@ -1,0 +1,484 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.grid-container::before{
+    content: "";
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.87;
+    top: 0;
+    left: 0;
+    
+
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'nav nav nav'
+        'section aside aside'
+        'experience experience experience'
+        'portfolio portfolio portfolio'
+        'about about about'
+        'whole-submit whole-submit whole-submit'
+
+        'footer footer footer'
+    ;
+}
+
+nav {
+    grid-area: nav;
+}
+
+#section {
+    grid-area: section;
+height: 700px;
+}
+
+#aside {
+    grid-area: aside;
+
+
+}
+.info{
+    font-size: 19px;
+    padding-left: 150px;
+    padding-top: 40px;
+    color: rgb(225, 225, 225);
+    font-family: 'Signika Negative', sans-serif;
+}
+hr{
+    opacity: 0.30;
+}
+.info h1{
+    animation: slideIn 1s linear;
+    font-size: 63px; 
+    font-family: 'Baloo Bhai 2';  
+}
+
+.info span{
+    /* padding-right: 10px; */
+    line-height: 2.6;
+    font-weight: 700;
+    
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-container i{
+    padding-right: 40px;
+    font-size: 30px;
+    color: white;
+}
+
+.box {
+
+    /* background-color: rgb(112, 206, 206); */
+    /* border: 3px solid black; */
+    /* padding: 8px; */
+}
+nav{
+    background-color: rgb(228, 124, 33);
+    /* height: 44px; */
+    /* opacity: 0.88; */
+    
+}
+
+
+nav h1{
+    animation: slideIn 1s linear;
+    padding-left: 200px;
+    padding-top: 0px;
+    font-size: 45px;
+    color: white;
+}
+.box i{
+    align-items: end;
+    cursor: pointer;
+}
+.btn{
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    animation: slideIn 1s linear;
+    font-family: 'Baloo Bhai 2';
+    margin-top: 31px;
+    /* background-color: rgb(33, 166, 228); */
+    background-color: rgb(237, 135, 46);
+    color: white;
+    height: 48px;
+    width: 330px;
+    border-radius: 8px;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid rgb(237, 135, 46) ;
+}
+.btn:hover{
+    transform: scale(1.1); /* Increase the size of the button by 10% */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    background-color: white;
+    color: black;
+    border: white;
+}
+
+#aside img{
+    opacity: 0.89;
+    
+    /* margin-top:-1    px; */
+}
+ /* <!-- ----------------------------EXPERIENCE--------------------------------------- --> */
+ .experience{
+    
+    color: rgb(239, 239, 239);
+    grid-area: experience;
+    background-color: rgb(47, 46, 46);
+ }
+ .baby-exp h1{
+    animation: slideIn 1s ease-in-out;
+    font-family: 'Baloo Bhai 2';
+    padding: 6px;
+    padding-top: 71px;
+    font-size: 3.75rem;
+    line-height: 1.1;
+ }
+ .baby-exp p{
+    animation: slideIn 1s ease-in-out;
+    font-size: 1.50rem;
+    font-family: 'Signika Negative', sans-serif;
+    width: 724px;
+    font-weight: 600;
+    padding-bottom: 44px;
+ }
+.baby-exp{
+    
+    text-align: center;
+}
+.baby-exp p{
+    
+    margin-left: 278px;
+    width: 809px;
+    /* border: 2px solid white; */
+}
+.exp-property{
+    display: inline-block;
+    width: 100%;
+    /* width: 900px; */
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 200px 400px;
+    margin: 20px;
+ 
+}
+.date{
+    font-family: 'Baloo Bhai 2';
+   padding-top: 8px;
+   padding-right: 10px;
+   font-size: 23px;
+}
+.box h2{
+    font-family: 'Baloo Bhai 2';
+    margin-bottom: 12px;
+    color: orange;
+    will-change: transform, opacity;
+    animation-duration: 1750ms;
+}
+.box{
+    
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+}
+.box p{
+    animation-delay: 20ms;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+
+.line{
+    width: 745px;
+    margin-left: 300px;
+
+}
+.bt{
+    font-family: 'Baloo Bhai 2';
+    margin-left : 618px;
+    /* background-color: rgb(33, 166, 228); */
+    background-color: rgb(237, 135, 46);
+    color: white;
+    height: 48px;
+    width: 330px;
+    border-radius: 8px;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid rgb(237, 135, 46) ;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+.bt:hover{
+    background-color: white;
+    color: black;
+    border: white;
+    transform: scale(1.1); /* Increase the size of the button by 10% */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+/* Add this animation keyframe at the beginning of your CSS */
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to specific elements */
+
+#section {
+    grid-area: section;
+    animation: slideIn 1s ease-in-out;
+}
+
+#aside {
+    grid-area: aside;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* <!-- ----------------------------Portfolio--------------------------------------- --> */
+.portfolio{
+    padding-bottom: 40px;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    grid-area: portfolio;
+    /* border: 2px solid aqua; */
+    grid-gap: 1rem;
+    font-family: 'baloo bhai 2';
+    text-align: center;
+
+}
+.portfolio p{
+    /* margin: 20px; */
+    /* padding: 28px; */
+    font-size: 25px;
+    width: 800px;
+    padding-left: 306px;
+
+}
+.portfolio h1{
+    padding: 28px;
+    font-size: 64px;
+    justify-content: center;
+    /* width: 800px; */
+    /* padding-left: 250px; */
+
+}
+.p-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition:all 0.5s ease-in-out ;
+}
+.p-box:hover{
+    transform: scale(1.1);
+    
+
+}
+.p-con{
+    
+    margin-top: 20px;
+    justify-content: center;
+    grid-gap: 2rem;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    
+}
+.p-con h2{
+    color: rgb(106, 106, 106);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Baloo Bhai 2';
+    padding: 10px;
+    margin-top: -9px;
+    background-color: white;
+    
+}
+/* <!-- ----------------------------about me --------------------------------------- --> */
+.about{
+    color: white;
+    font-family: 'baloo bhai 2';
+    padding-top: 50px;
+    background-color: rgb(44, 43, 43);
+    display: grid;
+    grid-area: about;
+    grid-template-columns: 730px 730px;
+}
+.abt-info{
+    /* border: 2px solid black; */
+    padding-left: 90px;
+}
+.abt-info p{
+    font-size: 20px;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+.circle-grid{
+    justify-content: center;
+    grid-gap: 7rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 48px;
+    /* border: 2px solid black; */
+    
+}
+.circle{
+    /* border: 2px solid black; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+
+    padding: 30px;
+    border-radius: 50%;
+    width: 89px;
+    height: 89px;
+    color: white;
+    font-family: 'baloo bhai 2';
+    background-color: rgb(238, 128, 11);
+}
+.circle h2{
+    display: flex;
+    
+    margin-top: 18px;
+    font-size: 35px;
+    font-family: 'Baloo Bhai 2';
+    transition: all 0.2s ease-in-out;
+    
+}
+.circle h2:hover{
+    /* transform: scale(1); */
+    transform: translatey(-15px);
+    
+}
+.whole-circle h4{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 7px;
+    font-size: 21px;
+    
+    font-family: "Baloo Bhai 2";
+}
+.btns{
+    font-family: 'Baloo Bhai 2';
+    margin-left : 90px;
+    margin-top: 21px;
+    /* background-color: rgb(33, 166, 228); */
+    background-color: rgb(237, 135, 46);
+    color: white;
+    height: 48px;
+    width: 330px;
+    border-radius: 8px;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid rgb(237, 135, 46) ;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+.btns:hover{
+    background-color: white;
+    color: black;
+    border: white;
+    transform: scale(1.1); /* Increase the size of the button by 10% */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+/* <!-- ---=----------------------------submit--------------------------------------- --> */
+.whole-submit{
+    grid-area: whole-submit;
+    background-color: rgb(46, 46, 46);
+}
+.submit{
+    /* grid-area: submit; */
+    display: flex;
+    align-items: center;
+    /* margin: 9px; */
+    flex-direction: column;
+    color: white;
+    font-family: 'baloo bhai 2';
+}
+.submit h1{
+    font-size: 70px;
+ 
+}
+.submit p{
+    font-size: 30px;
+ width: 900px;
+ margin-bottom: 20px;
+}
+.inputs{
+    
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 400px;
+    
+}
+.inputs input{
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+  height: 40px;
+  border: 2px solid white;
+    
+    
+}
+.inputs label{
+  color: white;
+  font-family: 'Baloo Bhai 2';
+    
+    
+}
+.inputs button{
+  height: 40px;
+    border-radius: 6px; 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    animation: slideIn 1s linear;
+    font-family: 'Baloo Bhai 2';
+    background-color: rgb(237, 135, 46);
+    color: white;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid rgb(237, 135, 46) ;
+}
+
+.inputs button:hover{
+    transform: scale(1.1); /* Increase the size of the button by 10% */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    background-color: white;
+    color: black;
+    border: white;
+
+}
+.img{
+    transition: all 0.5s ease-in-out;
+}
+.img:hover{
+    transform: scale(1.2);
+    /* transform: rotate(-23deg); */
+    /* transform: rotate(360deg); */
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
